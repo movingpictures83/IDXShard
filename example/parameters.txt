@@ -1,0 +1,2 @@
+bowtie2_index	bowtie2.idx
+shards	10
