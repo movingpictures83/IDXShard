@@ -1,0 +1,62 @@
+***********************************************************************************
+*                                                                                 *
+*  PPPPPPPPPPPP    L               U           U   M           M         A        *
+*  P           P   L               U           U   MM         MM        A A       *
+*  P           P   L               U           U   M M       M M       A   A      *
+*  P           P   L               U           U   M  M     M  M      A     A     *
+*  P           P   L               U           U   M   M   M   M     A       A    *
+*  PPPPPPPPPPPP    L               U           U   M    M M    M    A         A   *
+*  P               L               U           U   M     M     M   AAAAAAAAAAAAA  *
+*  P               L               U           U   M           M   A           A  *
+*  P               L               U           U   M           M   A           A  *
+*  P               LLLLLLLLLLLLL    UUUUUUUUUUU    M           M   A           A  *
+*                                                                                 *
+*            [Plu]gin-based [M]icrobiome [A]nalysis (formerly MiAMi)              *
+* (C) 2016, 2018 Bioinformatics Research Group, Florida International University  *
+*    Under MIT License From Open Source Initiative (OSI), All Rights Reserved.    *
+*                                                                                 *
+*    Any professionally published work using PluMA should cite the following:     *
+*                        T. Cickovski and G. Narasimhan.                          *
+*                Constructing Lightweight and Flexible Pipelines                  *
+*                 Using Plugin-Based Microbiome Analysis (PluMA)                  *
+*                     Bioinformatics 34(17):2881-2888, 2018                       *
+*                                                                                 *
+***********************************************************************************
+[PluMA] Running Plugin: IDXShard
+python plugins/IDXShard/runIDXShard.py --bowtie2_index plugins/IDXShard/example///bowtie2.idx --shards 10
+Warning: Ignoring non-Spark config property: conf spark.locality.wait
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/05/20 14:33:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 0:>                                                        (0 + 10) / 10]                                                                                /usr/local/lib/python3.6/site-packages/pyspark/context.py:238: FutureWarning: Python 3.6 support is deprecated in Spark 3.2.
+  FutureWarning
+[ 20-May-2025 14:33:52 ] 
+[ 20-May-2025 14:33:52 ] Configuring Spark...
+[ 20-May-2025 14:33:52 ] 
+[ 20-May-2025 14:33:54 ] 
+[ 20-May-2025 14:33:54 ] Starting Index Copy from: 
+[ 20-May-2025 14:33:54 ] plugins/IDXShard/example///bowtie2.idx
+[ 20-May-2025 14:33:54 ] 
+[ 20-May-2025 14:33:54 ] Index Shards to Copy:
+plugins/IDXShard/example///bowtie2.idx/1
+plugins/IDXShard/example///bowtie2.idx/2
+plugins/IDXShard/example///bowtie2.idx/3
+plugins/IDXShard/example///bowtie2.idx/4
+plugins/IDXShard/example///bowtie2.idx/5
+plugins/IDXShard/example///bowtie2.idx/6
+plugins/IDXShard/example///bowtie2.idx/7
+plugins/IDXShard/example///bowtie2.idx/8
+plugins/IDXShard/example///bowtie2.idx/9
+plugins/IDXShard/example///bowtie2.idx/10
+[ 20-May-2025 14:33:54 ] 
+[ 20-May-2025 14:33:54 ] No. RDD Partitions: 10
+[ 20-May-2025 14:33:54 ] 
+[ 20-May-2025 14:33:54 ] Starting to copy...
+[ 20-May-2025 14:33:55 ] 
+[ 20-May-2025 14:33:55 ] No. of Workers that acknowledged: 10
+[ 20-May-2025 14:33:55 ] 
+[ 20-May-2025 14:33:55 ]
+[ 20-May-2025 14:33:55 ] Index Copy Time: 0:00:01.545367
+[ 20-May-2025 14:33:55 ]
+[ 20-May-2025 14:33:55 ] Done.
